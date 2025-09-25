@@ -1,0 +1,211 @@
+.page .sponge .low-part .legs .left-leg, .page .sponge .low-part .legs .right-leg, .page .sponge .high-part .left-hand, .page .sponge .high-part .right-hand {
+  width: 14px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #fff01a;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(95, 158, 160, 0.5647058824);
+  padding: 100px;
+}
+.page .sponge {
+  margin: 10px auto;
+  width: 400px;
+  height: 600px;
+}
+.page .sponge .high-part {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+}
+.page .sponge .high-part .left-hand {
+  transform: skewX(-28deg) translateX(33px);
+}
+.page .sponge .high-part .right-hand {
+  transform: skewX(28deg) translateX(-33px);
+}
+.page .sponge .high-part .body {
+  background-color: #fff01a;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.page .sponge .high-part .body .circle {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.page .sponge .high-part .body .circle span {
+  position: absolute;
+  background-color: #f5b71a;
+}
+.page .sponge .high-part .body .circle span.one {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 100px;
+  left: 100px;
+}
+.page .sponge .high-part .body .circle span.two {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 100px;
+  left: 60px;
+}
+.page .sponge .high-part .body .circle span.three {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 140px;
+  left: 100px;
+}
+.page .sponge .high-part .body .circle span.four {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 170px;
+  left: 80px;
+}
+.page .sponge .high-part .body .circle span.x {
+  transform: translate(50px, 30px);
+}
+.page .sponge .high-part .body .circle span.y {
+  transform: translatey(-100px);
+}
+.page .sponge .high-part .body .circle span.z {
+  transform: translate(10px, 20px);
+}
+.page .sponge .high-part .body .circle span.s {
+  transform: translate(-67px, 16px);
+}
+.page .sponge .high-part .body .circle span.m {
+  transform: translate(93px, -94px);
+}
+.page .sponge .high-part .eyes {
+  width: 150px;
+  height: 50px;
+  padding: 0 12px;
+  margin: -170px 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 12;
+}
+.page .sponge .high-part .eyes .left-eye, .page .sponge .high-part .eyes .right-eye {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  width: 45px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+}
+.page .sponge .high-part .eyes .left-eye .left-bobo, .page .sponge .high-part .eyes .left-eye .right-bobo, .page .sponge .high-part .eyes .right-eye .left-bobo, .page .sponge .high-part .eyes .right-eye .right-bobo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(95, 158, 160, 0.5647058824);
+  position: absolute;
+  margin: 50%;
+  transform: translate(-50%, -50%);
+}
+.page .sponge .high-part .eyes .left-eye {
+  left: 2px;
+}
+.page .sponge .high-part .eyes .right-eye {
+  right: 2px;
+}
+.page .sponge .high-part .mouth {
+  position: absolute;
+  margin: -92px 75px 0;
+  width: 50px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.page .sponge .high-part .mouth.smile::after, .page .sponge .high-part .mouth.smile::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(254, 121, 121, 0.8588235294);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 0;
+  box-shadow: -9px 13px 0 0 rgba(254, 121, 121, 0.8588235294), 8px 14px 0 0 rgba(254, 121, 121, 0.8588235294);
+}
+.page .sponge .high-part .mouth.smile::after {
+  left: -26px;
+}
+.page .sponge .high-part .mouth.smile::before {
+  right: -26px;
+}
+.page .sponge .high-part .mouth .tooth .part-high-teeth, .page .sponge .high-part .mouth .tooth .part-low-teeth {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50%;
+}
+.page .sponge .high-part .mouth .tooth .part-high-teeth hr, .page .sponge .high-part .mouth .tooth .part-low-teeth hr {
+  height: 9px;
+}
+.page .sponge .low-part {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.page .sponge .low-part > div {
+  width: 100%;
+}
+.page .sponge .low-part .pants {
+  width: 200px;
+  height: 50px;
+  background-color: #8b6124;
+  position: relative;
+  z-index: 1;
+}
+.page .sponge .low-part .pants .box-krafit {
+  width: 24px;
+  height: 15px;
+  background-color: #130d0d;
+  position: absolute;
+  left: 88px;
+}
+.page .sponge .low-part .pants .krafit {
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  background-color: #130d0d;
+  position: absolute;
+  left: 85px;
+  top: 9px;
+  border-radius: 4px;
+}
+.page .sponge .low-part .legs {
+  position: relative;
+  height: 100px;
+}
+.page .sponge .low-part .legs .left-leg, .page .sponge .low-part .legs .right-leg {
+  position: absolute;
+  top: -4px;
+}
+.page .sponge .low-part .legs .left-leg {
+  margin-left: 33%;
+}
+.page .sponge .low-part .legs .right-leg {
+  margin-left: 63%;
+}
+
+/*# sourceMappingURL=main.css.map */
