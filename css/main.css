@@ -5,6 +5,14 @@
   background-color: #fff01a;
 }
 
+@media (max-width: 600px) {
+  .page {
+    padding: 50px 15px !important;
+  }
+  .page .sponge {
+    margin: 10px !important;
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -19,7 +27,7 @@
 }
 .page .sponge {
   margin: 10px auto;
-  width: 400px;
+  width: 285px;
   height: 600px;
 }
 .page .sponge .high-part {
@@ -28,10 +36,10 @@
   align-items: end;
 }
 .page .sponge .high-part .left-hand {
-  transform: skewX(-28deg) translateX(33px);
+  transform: skewX(-28deg) translateX(10px);
 }
 .page .sponge .high-part .right-hand {
-  transform: skewX(28deg) translateX(-33px);
+  transform: skewX(28deg) translateX(-10px);
 }
 .page .sponge .high-part .body {
   background-color: #fff01a;
@@ -116,7 +124,7 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: rgba(95, 158, 160, 0.5647058824);
+  background-color: rgba(12, 86, 197, 0.5647058824);
   position: absolute;
   margin: 50%;
   transform: translate(-50%, -50%);

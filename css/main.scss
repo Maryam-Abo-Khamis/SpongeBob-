@@ -2,7 +2,7 @@
 $background-page:#5f9ea090;
 $sponge-color:#fff01a;
 $circle-color:#f5b71a;
-$eye-color:#5f9ea090;
+$eye-color:#0c56c590;
 $pants-color:#8b6124;
 
 //mixin declare
@@ -17,6 +17,14 @@ $pants-color:#8b6124;
   border-radius: 5px;
   background-color: $sponge-color;
 }
+@media (max-width:600px) {
+  .page {
+    padding: 50px 15px !important;
+    .sponge{
+    margin: 10px !important;
+  }
+}
+}
 *{
   box-sizing: border-box;
   padding: 0;
@@ -29,7 +37,7 @@ $pants-color:#8b6124;
   padding: 100px;
     .sponge{
       margin: 10px auto;
-      width: 400px;
+      width: 285px;
       height: 600px;
         .high-part{
           display: flex;
@@ -39,10 +47,10 @@ $pants-color:#8b6124;
               @extend %hand;
             }
             .left-hand{
-              transform: skewX(-28deg) translateX(33px);
+              transform: skewX(-28deg) translateX(10px);
             }
             .right-hand{
-              transform: skewX(28deg) translateX(-33px);
+              transform: skewX(28deg) translateX(-10px);
             }
             .body{
               background-color: $sponge-color;
